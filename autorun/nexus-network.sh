@@ -1,7 +1,7 @@
 #!/bin/bash
 # Network Diagnostics Menu
 
-choice=$(dialog --clear --backtitle "Nexus-USB - Network" \
+choice=$(dialog --clear --backtitle "NexusUSB - Network" \
     --title "Network Diagnostics" \
     --menu "Select a tool:" 15 60 7 \
     1 "Network Configuration" \
