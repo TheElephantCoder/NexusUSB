@@ -1,8 +1,8 @@
-# Nexus-USB GUI Design
+# NexusUSB GUI Design
 
 ## Professional Interface
 
-Nexus-USB features a modern, polished graphical interface built with GTK3 and Python.
+NexusUSB features a modern, polished graphical interface built with GTK3 and Python.
 
 ### Design Philosophy
 
@@ -23,7 +23,7 @@ Nexus-USB features a modern, polished graphical interface built with GTK3 and Py
 ### Interface Components
 
 #### 1. Header Bar
-- Nexus-USB logo (400x80px)
+- NexusUSB logo (400x80px)
 - Title and subtitle
 - System status indicator
 - Professional gradient background
@@ -184,7 +184,7 @@ The GUI automatically launches on boot:
 
 1. Openbox window manager starts
 2. Background wallpaper loads
-3. Nexus-USB GUI launches fullscreen
+3. NexusUSB GUI launches fullscreen
 4. User sees professional interface immediately
 
 No command-line interaction needed!
@@ -203,7 +203,7 @@ gui/nexus-gui.py
 
 ### Comparison with Other Tools
 
-| Feature | Nexus-USB | Hiren's | SystemRescue | Medicat |
+| Feature | NexusUSB | Hiren's | SystemRescue | Medicat |
 |---------|----------|---------|--------------|---------|
 | GUI | ✓ Modern GTK | ✓ Windows PE | ✗ Text only | ✓ Windows PE |
 | Icons | ✓ All tools | ✓ Some | ✗ None | ✓ All tools |
@@ -211,7 +211,7 @@ gui/nexus-gui.py
 | Branding | ✓ Full | ✓ Limited | ✗ None | ✓ Full |
 | Touch | ✓ Yes | ✓ Yes | ✗ No | ✓ Yes |
 
-Nexus-USB provides a professional, modern interface that rivals commercial tools while remaining fully open-source.
+NexusUSB provides a professional, modern interface that rivals commercial tools while remaining fully open-source.
 
 ### Screenshots
 
