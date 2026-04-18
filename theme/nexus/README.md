@@ -1,9 +1,9 @@
-# Nexus-USB Theme Assets
+# NexusUSB Theme Assets
 
 Place the following image files in this directory:
 
 - `background.png` - 1920x1080 background (blue/black gradient)
-- `logo.png` - 400x80 Nexus-USB logo
+- `logo.png` - 400x80 NexusUSB logo
 - `select_c.png` - Center part of selection highlight
 - `select_e.png` - East (right) edge of selection
 - `select_w.png` - West (left) edge of selection
