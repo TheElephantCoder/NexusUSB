@@ -1,11 +1,11 @@
 #!/bin/bash
-# Download and create actual tool logos for Nexus-USB
+# Download and create actual tool logos for NexusUSB
 
 ICON_DIR="assets/icons"
 TOOLS_DIR="$ICON_DIR/tools"
 mkdir -p "$ICON_DIR" "$TOOLS_DIR"
 
-echo "Creating Nexus-USB branding and downloading tool logos..."
+echo "Creating NexusUSB branding and downloading tool logos..."
 
 # Main logo (400x80)
 convert -size 400x80 xc:transparent \
@@ -193,10 +193,10 @@ echo ""
 echo "✓ Icons created successfully!"
 echo ""
 echo "Locations:"
-echo "  - Nexus-USB branding: $ICON_DIR/"
+echo "  - NexusUSB branding: $ICON_DIR/"
 echo "  - Tool logos: $TOOLS_DIR/"
 echo ""
 echo "To use custom logos:"
 echo "  1. Replace files in $TOOLS_DIR/ with your own 64x64 PNG files"
 echo "  2. Name them exactly as shown (e.g., clamav.png, gparted.png)"
-echo "  3. Rebuild Nexus-USB"
+echo "  3. Rebuild NexusUSB"
