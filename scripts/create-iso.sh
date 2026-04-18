@@ -8,7 +8,7 @@ echo "Creating ISO image..."
 xorriso -as mkisofs \
     -iso-level 3 \
     -full-iso9660-filenames \
-    -volid "Nexus-USB" \
+    -volid "NexusUSB" \
     -eltorito-boot boot/grub/bios.img \
     -no-emul-boot \
     -boot-load-size 4 \
