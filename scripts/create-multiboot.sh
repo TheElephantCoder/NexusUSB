@@ -25,7 +25,7 @@ parted "$OUTPUT_IMG" mkpart primary fat32 1MiB 513MiB
 parted "$OUTPUT_IMG" set 1 boot on
 parted "$OUTPUT_IMG" set 1 esp on
 
-# Partition 2: Nexus-USB Live System (ext4)
+# Partition 2: NexusUSB Live System (ext4)
 parted "$OUTPUT_IMG" mkpart primary ext4 513MiB 8705MiB
 
 # Partition 3: Windows Tools (NTFS)
@@ -55,8 +55,8 @@ mount "${LOOP_DEV}p2" /mnt/live
 mount "${LOOP_DEV}p3" /mnt/windows
 mount "${LOOP_DEV}p4" /mnt/isos
 
-# Copy Nexus-USB system
-echo "Copying Nexus-USB system..."
+# Copy NexusUSB system
+echo "Copying NexusUSB system..."
 cp -r build/iso/* /mnt/live/
 
 # Copy Windows tools
@@ -102,7 +102,7 @@ mkdir -p ISOs/{Linux,Security,Rescue,Antivirus,Windows,Tools}
 
 # Create README
 cat > README.txt << 'EOF'
-Nexus-USB - ISO Collection
+NexusUSB - ISO Collection
 
 Place your ISO files in the appropriate subdirectories:
 - Linux: Linux distributions
@@ -124,6 +124,6 @@ echo "Multi-partition image created: $OUTPUT_IMG"
 echo ""
 echo "Partition Layout:"
 echo "  1. Boot (512MB) - EFI/GRUB bootloader"
-echo "  2. Nexus-USB (8GB) - Live Linux environment"
+echo "  2. NexusUSB (8GB) - Live Linux environment"
 echo "  3. Windows Tools (8GB) - Portable Windows applications"
 echo "  4. ISOs (${ISO_SIZE}) - Multiboot ISO collection"
