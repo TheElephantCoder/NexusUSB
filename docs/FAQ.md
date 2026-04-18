@@ -2,14 +2,14 @@
 
 ## General
 
-### What is Nexus-USB?
-Nexus-USB is a bootable USB toolkit for system recovery, malware scanning, and diagnostics. It's similar to Medicat USB but open-source.
+### What is NexusUSB?
+NexusUSB is a bootable USB toolkit for system recovery, malware scanning, and diagnostics. It's similar to Medicat USB but open-source.
 
 ### How large is the ISO?
 The final ISO is approximately 4-6GB. When flashed to USB, we recommend a 32GB drive for additional storage space.
 
-### Is Nexus-USB free?
-Yes, Nexus-USB is completely free and open-source under the MIT License.
+### Is NexusUSB free?
+Yes, NexusUSB is completely free and open-source under the MIT License.
 
 ## Building
 
@@ -29,16 +29,16 @@ Not directly. Use WSL2 (Windows Subsystem for Linux) with Ubuntu.
 2. Restart your computer
 3. Enter BIOS/UEFI (usually F2, F12, Del, or Esc)
 4. Select the USB drive as boot device
-5. Choose Nexus-USB from the boot menu
+5. Choose NexusUSB from the boot menu
 
 ### Does it work on UEFI systems?
-Yes, Nexus-USB supports both Legacy BIOS and UEFI boot modes.
+Yes, NexusUSB supports both Legacy BIOS and UEFI boot modes.
 
 ### Can I use this on Mac?
 Yes, but you may need to hold Option/Alt during boot to access the boot menu.
 
 ### Will this erase my hard drive?
-No, Nexus-USB runs entirely from the USB drive and doesn't modify your system unless you explicitly use tools to do so.
+No, NexusUSB runs entirely from the USB drive and doesn't modify your system unless you explicitly use tools to do so.
 
 ## Troubleshooting
 
