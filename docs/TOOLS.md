@@ -1,4 +1,4 @@
-# Nexus-USB Tools Reference
+# NexusUSB Tools Reference
 
 ## Security & Malware Scanning
 
