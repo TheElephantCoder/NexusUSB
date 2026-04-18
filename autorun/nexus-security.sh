@@ -1,5 +1,5 @@
 #!/bin/bash
-# Nexus-USB Security & Malware Scanning Menu
+# NexusUSB Security & Malware Scanning Menu
 # Professional malware detection and removal
 
 DIALOG_HEIGHT=22
@@ -30,7 +30,7 @@ show_result() {
 }
 
 while true; do
-    choice=$(dialog --clear --backtitle "Nexus-USB - Professional Malware Scanner" \
+    choice=$(dialog --clear --backtitle "NexusUSB - Professional Malware Scanner" \
         --title "🛡️  Security & Malware Scanning" \
         --menu "Select scanning option:" $DIALOG_HEIGHT $DIALOG_WIDTH 13 \
         1 "🖥️  Auto-Scan Windows (Recommended)" \
