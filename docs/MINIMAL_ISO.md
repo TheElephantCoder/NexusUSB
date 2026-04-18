@@ -1,4 +1,4 @@
-# Nexus-USB Minimal ISO
+# NexusUSB Minimal ISO
 
 A lightweight 2GB bootable ISO with essential rescue and remote access tools.
 
@@ -57,13 +57,13 @@ sudo apt install -y debootstrap grub-pc-bin grub-efi-amd64-bin xorriso \
 # Build minimal ISO
 sudo ./build-minimal.sh
 
-# Output: dist/Nexus-USB-Minimal.iso (~2GB)
+# Output: dist/NexusUSB-Minimal.iso (~2GB)
 ```
 
 ## Use Cases
 
 ### Remote Support Scenario
-1. Boot client machine with Nexus-USB Minimal
+1. Boot client machine with NexusUSB Minimal
 2. Connect to network (WiFi or Ethernet)
 3. Start xrdp or x11vnc server
 4. Connect remotely from your machine
@@ -91,7 +91,7 @@ sudo ./build-minimal.sh
 
 ### As RDP Server (Accept Connections)
 ```bash
-# From Nexus-USB menu: Remote Access > Start RDP Server
+# From NexusUSB menu: Remote Access > Start RDP Server
 # Or manually:
 systemctl start xrdp
 ip addr  # Note your IP address
@@ -104,7 +104,7 @@ ip addr  # Note your IP address
 
 ### As VNC Server (Accept Connections)
 ```bash
-# From Nexus-USB menu: Remote Access > Start VNC Server
+# From NexusUSB menu: Remote Access > Start VNC Server
 # Or manually:
 x11vnc -display :0 -forever -shared
 
@@ -115,7 +115,7 @@ x11vnc -display :0 -forever -shared
 
 ### As RDP/VNC Client (Connect to Others)
 ```bash
-# From Nexus-USB menu: Remote Access > Remmina
+# From NexusUSB menu: Remote Access > Remmina
 # Or manually:
 remmina
 
@@ -134,7 +134,7 @@ systemctl start ssh
 passwd  # Set root password
 
 # From another machine:
-ssh root@[nexus-usb-ip]
+ssh root@[NexusUSB-ip]
 ```
 
 ## Advantages of Minimal ISO
@@ -238,17 +238,17 @@ git pull
 sudo ./build-minimal.sh
 
 # Flash to USB
-sudo dd if=dist/Nexus-USB-Minimal.iso of=/dev/sdX bs=4M
+sudo dd if=dist/NexusUSB-Minimal.iso of=/dev/sdX bs=4M
 ```
 
 ## Comparison with Other Tools
 
 | Tool | Size | Remote Access | Malware Scan | Recovery |
 |------|------|---------------|--------------|----------|
-| Nexus-USB Minimal | 2GB | ✓ Full | ✓ ClamAV | ✓ TestDisk |
+| NexusUSB Minimal | 2GB | ✓ Full | ✓ ClamAV | ✓ TestDisk |
 | SystemRescue | 800MB | ✓ Limited | ✗ | ✓ TestDisk |
 | Clonezilla | 400MB | ✗ | ✗ | ✓ Cloning only |
 | Hiren's BootCD | 1.5GB | ✓ Limited | ✓ Multiple | ✓ Multiple |
-| Nexus-USB Full | 10GB+ | ✓ Full | ✓ Multiple | ✓ Multiple |
+| NexusUSB Full | 10GB+ | ✓ Full | ✓ Multiple | ✓ Multiple |
 
-Nexus-USB Minimal provides the best balance of size, features, and remote access capabilities.
+NexusUSB Minimal provides the best balance of size, features, and remote access capabilities.
