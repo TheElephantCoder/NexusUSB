@@ -1,4 +1,4 @@
-# Contributing to Nexus-USB
+# Contributing to NexusUSB
 
 Thanks for your interest in contributing!
 
@@ -14,7 +14,7 @@ Thanks for your interest in contributing!
 
 ## Adding New Tools
 
-To add a new tool to Nexus-USB:
+To add a new tool to NexusUSB:
 
 1. Add the tool to `config/tools.conf` with format:
    ```
