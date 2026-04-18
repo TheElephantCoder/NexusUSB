@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-echo "=== Nexus-USB Minimal ISO Builder ==="
+echo "=== NexusUSB Minimal ISO Builder ==="
 echo "Building lightweight bootable ISO for quick deployment"
 echo ""
 
 # Configuration
 BUILD_DIR="build-minimal"
 DIST_DIR="dist"
-ISO_NAME="Nexus-USB-Minimal.iso"
+ISO_NAME="NexusUSB-Minimal.iso"
 WORK_DIR="$BUILD_DIR/work"
 ISO_DIR="$BUILD_DIR/iso"
 
@@ -72,7 +72,7 @@ cd ..
 
 echo ""
 echo -e "${GREEN}╔════════════════════════════════════════════════════════╗${NC}"
-echo -e "${GREEN}║       Nexus-USB Minimal Build Complete!                ║${NC}"
+echo -e "${GREEN}║       NexusUSB Minimal Build Complete!                ║${NC}"
 echo -e "${GREEN}╚════════════════════════════════════════════════════════╝${NC}"
 echo ""
 echo "Output file: $DIST_DIR/$ISO_NAME"
