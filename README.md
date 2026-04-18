@@ -199,7 +199,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## 📋 Comparison
 
-| Feature | Nexus-USB | Medicat USB | Hiren's BootCD | SystemRescue |
+| Feature | NexusUSB | Medicat USB | Hiren's BootCD | SystemRescue |
 |---------|-----------|-------------|----------------|--------------|
 | **Open Source** | ✅ Yes | ❌ No | ⚠️ Partial | ✅ Yes |
 | **Linux Tools** | 150+ | Limited | Limited | 50+ |
@@ -213,7 +213,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## 📜 License
 
-Nexus-USB is released under the [MIT License](LICENSE).
+NexusUSB is released under the [MIT License](LICENSE).
 
 **You are free to:**
 - Use commercially
@@ -264,7 +264,7 @@ See [ROADMAP.md](ROADMAP.md) for planned features and future development.
 
 ## ⭐ Star History
 
-If you find Nexus-USB useful, please consider giving it a star on GitHub!
+If you find NexusUSB useful, please consider giving it a star on GitHub!
 
 ---
 
@@ -353,7 +353,7 @@ sudo apt install -y debootstrap grub-pc-bin grub-efi-amd64-bin xorriso \
 sudo ./build-minimal.sh
 
 # Flash to USB
-sudo dd if=dist/Nexus-USB-Minimal.iso of=/dev/sdX bs=4M status=progress
+sudo dd if=dist/NexusUSB-Minimal.iso of=/dev/sdX bs=4M status=progress
 ```
 
 **Minimal ISO includes:**
@@ -371,8 +371,8 @@ sudo dd if=dist/Nexus-USB-Minimal.iso of=/dev/sdX bs=4M status=progress
 # Build full system (32GB default)
 sudo ./build.sh 32
 
-# Output: dist/Nexus-USB.img
-sudo dd if=dist/Nexus-USB.img of=/dev/sdX bs=4M status=progress
+# Output: dist/NexusUSB.img
+sudo dd if=dist/NexusUSB.img of=/dev/sdX bs=4M status=progress
 ```
 
 **Full build includes:**
@@ -394,7 +394,7 @@ sudo dd if=dist/Nexus-USB.img of=/dev/sdX bs=4M status=progress
 
 ## What Gets Downloaded Automatically
 
-When you run `./build.sh`, Nexus-USB automatically:
+When you run `./build.sh`, NexusUSB automatically:
 
 - Installs 150+ Linux tools from Ubuntu repositories
 - Downloads 30+ Windows portable applications
@@ -426,7 +426,7 @@ Additional tools and ISOs can be added manually (see [What's Included](docs/WHAT
 ## Project Structure
 
 ```
-Nexus-USB/
+NexusUSB/
 ├── build.sh              # Main build script (full build)
 ├── build-minimal.sh      # Minimal ISO builder (2GB)
 ├── config/
@@ -457,7 +457,7 @@ Nexus-USB/
 
 ### Multi-Partition Layout
 1. **Boot Partition (512MB)** - EFI/GRUB bootloader
-2. **Nexus-USB Live (8GB)** - Linux environment with tools
+2. **NexusUSB Live (8GB)** - Linux environment with tools
 3. **Windows Tools (8GB)** - Portable Windows applications
 4. **ISO Collection (remaining)** - Multiboot ISO library
 
@@ -502,7 +502,7 @@ Place ISO files in `build/isos/` organized by category:
 Edit files in `theme/nexus/`:
 - `theme.txt` - Colors and layout
 - `background.png` - Boot background
-- `logo.png` - Nexus-USB logo
+- `logo.png` - NexusUSB logo
 
 ## Contributing
 
