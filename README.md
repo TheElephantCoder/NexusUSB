@@ -1,4 +1,4 @@
-# Nexus-USB
+# NexusUSB
 
 <div align="center">
 
@@ -17,9 +17,9 @@
 
 ---
 
-## 🚀 What is Nexus-USB?
+## 🚀 What is NexusUSB?
 
-Nexus-USB is a comprehensive, open-source bootable USB toolkit that combines a live Linux environment with Windows PE integration, providing access to 150+ professional tools for:
+NexusUSB is a comprehensive, open-source bootable USB toolkit that combines a live Linux environment with Windows PE integration, providing access to 150+ professional tools for:
 
 - **🛡️ Malware Scanning** - ClamAV, chkrootkit, rkhunter, and Windows antivirus tools
 - **💾 Data Recovery** - TestDisk, PhotoRec, ddrescue, and file carving tools
@@ -100,7 +100,7 @@ make icons
 make minimal
 
 # 5. Flash to USB
-sudo dd if=dist/Nexus-USB-Minimal.iso of=/dev/sdX bs=4M status=progress
+sudo dd if=dist/NexusUSB-Minimal.iso of=/dev/sdX bs=4M status=progress
 ```
 
 **That's it!** Boot from USB and start rescuing systems.
@@ -120,7 +120,7 @@ For detailed instructions, see [QUICKSTART.md](QUICKSTART.md).
 
 ## 🛠️ What Gets Downloaded Automatically
 
-When you run the build, Nexus-USB automatically:
+When you run the build, NexusUSB automatically:
 
 ✅ Installs 150+ Linux tools from Ubuntu repositories  
 ✅ Downloads 30+ Windows portable applications  
@@ -134,7 +134,7 @@ Additional tools and ISOs can be added manually. See [What's Included](docs/WHAT
 
 ## 🔒 Malware Scanning
 
-Nexus-USB provides professional-grade malware scanning:
+NexusUSB provides professional-grade malware scanning:
 
 **Linux Environment:**
 - ClamAV (8+ million signatures)
@@ -164,7 +164,7 @@ Built-in remote access tools for remote troubleshooting:
 - **TeamViewer** - Remote support software
 - **AnyDesk** - Remote desktop application
 
-**Use case:** Boot a broken machine with Nexus-USB, connect to network, start RDP server, and troubleshoot remotely from your desk!
+**Use case:** Boot a broken machine with NexusUSB, connect to network, start RDP server, and troubleshoot remotely from your desk!
 
 ## 💻 System Requirements
 
@@ -246,8 +246,8 @@ Nexus-USB is released under the [MIT License](LICENSE).
 
 ## 📞 Support
 
-- **Issues:** [GitHub Issues](https://github.com/TheElephantCoder/Nexus-USB/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/TheElephantCoder/Nexus-USB/discussions)
+- **Issues:** [GitHub Issues](https://github.com/TheElephantCoder/NexusUSB/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/TheElephantCoder/NexusUSB/discussions)
 - **Documentation:** [docs/](docs/) directory
 - **FAQ:** [docs/FAQ.md](docs/FAQ.md)
 
@@ -270,9 +270,9 @@ If you find Nexus-USB useful, please consider giving it a star on GitHub!
 
 <div align="center">
 
-**Made with ❤️ by the open-source community**
+**Made with ❤️ by TheElephantCoder**
 
-[Website](https://nexus-usb.org) • [GitHub](https://github.com/TheElephantCoder/Nexus-USB) • [Documentation](docs/)
+[GitHub](https://github.com/TheElephantCoder/NexusUSB) • [Documentation](docs/)
 
 </div>
 
