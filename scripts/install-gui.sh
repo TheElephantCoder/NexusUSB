@@ -21,7 +21,7 @@ chroot "$WORK_DIR" apt install -y \
     wget
 
 # Create icons directory
-mkdir -p "$WORK_DIR/usr/share/nexus-usb/icons/tools"
+mkdir -p "$WORK_DIR/usr/share/NexusUSB/icons/tools"
 
 # Run icon creation script
 echo "Downloading and creating tool logos..."
@@ -33,26 +33,26 @@ else
 fi
 
 # Copy GUI application
-mkdir -p "$WORK_DIR/usr/share/nexus-usb"
-cp -r gui/* "$WORK_DIR/usr/share/nexus-usb/"
-chmod +x "$WORK_DIR/usr/share/nexus-usb/nexus-gui.py"
+mkdir -p "$WORK_DIR/usr/share/NexusUSB"
+cp -r gui/* "$WORK_DIR/usr/share/NexusUSB/"
+chmod +x "$WORK_DIR/usr/share/NexusUSB/nexus-gui.py"
 
 # Copy icons
 if [ -d "assets/icons" ]; then
-    cp -r assets/icons/* "$WORK_DIR/usr/share/nexus-usb/icons/"
+    cp -r assets/icons/* "$WORK_DIR/usr/share/NexusUSB/icons/"
 else
     echo "Warning: Icons directory not found"
 fi
 
 # Create desktop entry
-cat > "$WORK_DIR/usr/share/applications/nexus-usb.desktop" << 'EOF'
+cat > "$WORK_DIR/usr/share/applications/NexusUSB.desktop" << 'EOF'
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Nexus-USB Toolkit
+Name=NexusUSB Toolkit
 Comment=Professional System Rescue & Recovery
-Exec=/usr/share/nexus-usb/nexus-gui.py
-Icon=/usr/share/nexus-usb/icons/nexus-icon.png
+Exec=/usr/share/NexusUSB/nexus-gui.py
+Icon=/usr/share/NexusUSB/icons/nexus-icon.png
 Terminal=false
 Categories=System;Utility;
 Keywords=rescue;recovery;malware;disk;network;
@@ -60,17 +60,17 @@ EOF
 
 # Set GUI to auto-start
 mkdir -p "$WORK_DIR/etc/xdg/autostart"
-cp "$WORK_DIR/usr/share/applications/nexus-usb.desktop" \
+cp "$WORK_DIR/usr/share/applications/NexusUSB.desktop" \
    "$WORK_DIR/etc/xdg/autostart/"
 
 # Configure Openbox to launch GUI
 mkdir -p "$WORK_DIR/etc/xdg/openbox"
 cat > "$WORK_DIR/etc/xdg/openbox/autostart" << 'EOF'
 # Set wallpaper
-feh --bg-scale /usr/share/nexus-usb/icons/background.png &
+feh --bg-scale /usr/share/NexusUSB/icons/background.png &
 
-# Launch Nexus-USB GUI
-/usr/share/nexus-usb/nexus-gui.py &
+# Launch NexusUSB GUI
+/usr/share/NexusUSB/nexus-gui.py &
 EOF
 
 echo "Professional GUI installed"
