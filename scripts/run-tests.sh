@@ -1,9 +1,9 @@
 #!/bin/bash
-# Test suite for Nexus-USB
+# Test suite for NexusUSB
 
 set -e
 
-echo "=== Nexus-USB Test Suite ==="
+echo "=== NexusUSB Test Suite ==="
 echo ""
 
 TESTS_PASSED=0
