@@ -1,9 +1,9 @@
 #!/bin/bash
-# Check build environment for Nexus-USB
+# Check build environment for NexusUSB
 
 set -e
 
-echo "=== Nexus-USB Environment Check ==="
+echo "=== NexusUSB Environment Check ==="
 echo ""
 
 # Color codes
@@ -146,7 +146,7 @@ echo ""
 # Summary
 echo "=== Summary ==="
 if [ $ERRORS -eq 0 ] && [ $WARNINGS -eq 0 ]; then
-    echo -e "${GREEN}✓ Environment is ready for building Nexus-USB${NC}"
+    echo -e "${GREEN}✓ Environment is ready for building NexusUSB${NC}"
     exit 0
 elif [ $ERRORS -eq 0 ]; then
     echo -e "${YELLOW}⚠ Environment is ready with $WARNINGS warning(s)${NC}"
