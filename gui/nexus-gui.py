@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Nexus-USB Professional GUI with Real Tool Logos
+NexusUSB Professional GUI with Real Tool Logos
 Modern, polished interface with actual application icons
 """
 
@@ -10,18 +10,18 @@ from gi.repository import Gtk, Gdk, GdkPixbuf, Gio
 import subprocess
 import os
 
-ICON_PATH = "/usr/share/nexus-usb/icons/tools"
+ICON_PATH = "/usr/share/NexusUSB/icons/tools"
 ICON_SIZE = 64
 
 class NexusUSBApp(Gtk.Window):
     def __init__(self):
-        Gtk.Window.__init__(self, title="Nexus-USB Toolkit")
+        Gtk.Window.__init__(self, title="NexusUSB Toolkit")
         self.set_default_size(1000, 700)
         self.set_position(Gtk.WindowPosition.CENTER)
         
         # Set window icon
         try:
-            self.set_icon_from_file("/usr/share/nexus-usb/icons/nexus-icon.png")
+            self.set_icon_from_file("/usr/share/NexusUSB/icons/nexus-icon.png")
         except:
             pass
         
@@ -238,13 +238,13 @@ class NexusUSBApp(Gtk.Window):
         # Logo
         try:
             logo_pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(
-                "/usr/share/nexus-usb/icons/nexus-logo.png", 200, 40, True
+                "/usr/share/NexusUSB/icons/nexus-logo.png", 200, 40, True
             )
             logo = Gtk.Image.new_from_pixbuf(logo_pixbuf)
             header.pack_start(logo, False, False, 0)
         except:
             title = Gtk.Label()
-            title.set_markup('<span size="x-large" weight="bold" color="#66b3ff">Nexus-USB</span>')
+            title.set_markup('<span size="x-large" weight="bold" color="#66b3ff">NexusUSB</span>')
             header.pack_start(title, False, False, 0)
         
         subtitle = Gtk.Label()
@@ -311,7 +311,7 @@ class NexusUSBApp(Gtk.Window):
         
         statusbar.pack_start(Gtk.Box(), True, True, 0)
         
-        version = Gtk.Label(label="Nexus-USB v1.0")
+        version = Gtk.Label(label="NexusUSB v1.0")
         statusbar.pack_end(version, False, False, 0)
         
         return statusbar
@@ -356,7 +356,7 @@ class NexusUSBApp(Gtk.Window):
         
         welcome = Gtk.Label()
         welcome.set_markup(
-            '<span size="x-large" weight="bold" color="#66b3ff">Welcome to Nexus-USB</span>\n'
+            '<span size="x-large" weight="bold" color="#66b3ff">Welcome to NexusUSB</span>\n'
             '<span color="#99ccff">Select a tool category from the sidebar</span>'
         )
         box.pack_start(welcome, False, False, 20)
