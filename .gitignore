@@ -1,0 +1,60 @@
+# Build artifacts
+build/
+build-minimal/
+dist/
+*.iso
+*.img
+*.log
+
+# Backup files
+*.bak
+*~
+.*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Downloaded tools and ISOs
+assets/icons/tools/*.png
+build/isos/*.iso
+build/windows-tools/*
+
+# Keep directory structure but ignore contents
+!assets/icons/tools/.gitkeep
+!build/isos/.gitkeep
+!build/windows-tools/.gitkeep
+
+# Logs
+*.log
+build.log
+
+# Checksums (generated during build)
+*.sha256
+*.md5
+
+# Test files
+test-*.sh
+*.test
+
+# Local configuration
+local.conf
+.env
